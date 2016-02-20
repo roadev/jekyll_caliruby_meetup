@@ -10,12 +10,12 @@
 <body class="shower list">
 	<header class="caption">
 		<h1>CaliRuby Meetup</h1>
-		<p>hola</p>
+		<p>Building Static Websites with Jekyll</p>
 	</header>
 	<section class="slide" id="cover">
 		<h2>Build static websites with Jekyll</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover-1.jpg" alt="" class="cover">
+		<p>Brought to you by <a href="http://juanroa.me" target="_blank">Juan Roa</a></p>
+		<img src="pictures/cover_0.jpg" alt="" class="cover">
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
@@ -43,11 +43,11 @@
 		<h2>What is Jekyll?</h2>
 		<ul>
 			<li>It's a parsing engine</li>
-			<li>Is bundled as a ruby gem</li>
-			<li>Is used to build static websites from dynamic components</li>
-			<li>Not a blog platform - Just a static website generator</li>
-			<li>Create content with markdown and templates with HTML5/CSS3/JS</li>
-			<li>Use plugins or build yours</li>
+			<li class="next">Is bundled as a ruby gem</li>
+			<li class="next">Is used to build static websites from dynamic components</li>
+			<li class="next">Not a blog platform - Just a static website generator</li>
+			<li class="next">Create content with <strong>markdown</strong> and templates with HTML5/CSS3/JS</li>
+			<li class="next">Use plugins or build yours</li>
 		</ul>
 		<p class="note">Static: not dynamic (yup!)</p>
 	</section>
@@ -56,9 +56,9 @@
 		<p>Traditional dynamic blogs like Wordpress require a database and server-side code. Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.</p>
 		<ul>
 			<li>Ability to write content in markdown in your favorite text-editor.</li>
-			<li>Ability to publish via git.</li>
-			<li>Ability to host your blog on a static web-server, like GitHub Pages</li>
-			<li>No database required.</li>
+			<li class="next">Ability to publish via git.</li>
+			<li class="next">Ability to host your blog on a static web-server, like GitHub Pages</li>
+			<li class="next">No database required.</li>
 		</ul>
 	</section>
 	<section class="slide">
@@ -80,7 +80,7 @@
 Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with your site and post/page data.</p>
 	</section>
 	<section class="slide">
-		<h2>Example</h2>
+		<h2>default.html (example)</h2>
 		<pre>
 			<code>&lt;!DOCTYPE html&gt;</code>
 			<code>&lt;html lang="en"&gt;</code>
@@ -98,18 +98,18 @@ Jekyll uses Liquid to generate the post content within the final page layout str
 		Partials are partial views but not templates
 		<ul>
 			<li>head</li>
-			<li>main</li>
-			<li>footer</li>
+			<li class="next">main</li>
+			<li class="next">footer</li>
 		</ul>
 		<strong>Templates:</strong>
 		<ul>
-			<li>default</li>
-			<li>page</li>
-			<li>tags</li>
+			<li class="next">default</li>
+			<li class="next">page</li>
+			<li class="next">tags</li>
 		</ul>
 	</section>
 	<section class="slide" id="picture">
-		<h2>Pictures</h2>
+		<h2>Customization</h2>
 		<img src="pictures/picture.jpg" alt="" class="cover">
 		<style>
 			#picture h2 {
@@ -118,38 +118,91 @@ Jekyll uses Liquid to generate the post content within the final page layout str
 		</style>
 	</section>
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<center>
+			<img width="280px" src="pictures/rouge.svg" />
+			<img width="280px" src="pictures/pygments.png" alt="">
+			<br/><br/>
+			<img width="300px" src="pictures/sass.svg" alt="">
+		</center>
 	</section>
 	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<h2>Front matter / Liquid tags examples: </h2>
+		<p>Including variables...</p>
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/main.scss.png" alt="">
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/config_1.png" alt="">
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/config_2.png" alt="">
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/post_1.png" alt="">
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/liquid_variables.png" alt="">
+	</section>
+
+	<section class="slide">
+		<h2>Local/Dev environment</h2>
+		<img src="pictures/env_1.png" alt="">
+	</section>
+	<section class="slide">
+		<img src="pictures/jekyll_local.png" alt="">
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/github.pages.jpg" alt="">
+	</section>
+	<section class="slide">
+		<h2>Custom Domain ? (yeah!)</h2>
+		<h3>Just create a file named: CNAME and put some like</h3>
+		<br/>
+		<pre>
+			<code>myawesomejekyllsite.co</code>
+			<code></code>
+		</pre>
+		<br/><br/>
+		<h3>and... that's all!</h3>
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/bootstrap-plus-jekyll.png" alt="">
+	</section>
+	<section class="slide">
+		<h2>Themes?</h2>
+		<a href="http://jekyllthemes.org" target="_blank">JekyllThemes.org</a>
+		<img src="pictures/jekyllthemes.png" alt="">
+	</section>
+
+	<section class="slide">
+		<h2>Jekyll on GitHub (doc)</h2>
+		<a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/" target="_blank">Click me</a>
+	</section>
+	<section class="slide">
+		<h2>Personal experience</h2>
+		<a href="http://roadev.github.io/countdown-to-creadev.co/" target="_blank">Countdown landing page</a>
+		<br/>
+		<a href="http://juanroa.me" target="_blank">My personal blog</a>
+		<br/>
+		<a href="https://inded.xyz/Jekyll_modern-blog/" target="_blank">Nice someone's blog example :)</a>
+		<br/><br/>
+		Not all are built on jekyll, but all are running on gh-pages ! :
+		<br/>
+		<a href="https://pages.github.com/" target="_blank">Github pages</a>
+	</section>
+	<section class="slide">
+		<h2>Thanks to: </h2>
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/morrison_logo.png" alt="">
 	</section>
 	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+		<img class="cover" src="pictures/jekyll_event_flyer.png" alt="">
 	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
-	</section>
+
 	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+		<a href="https://jekyllrb.com/">Jekyll rb</a>
 	</p>
 	<!--
 		To hide progress bar from entire presentation
