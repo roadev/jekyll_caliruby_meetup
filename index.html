@@ -80,52 +80,33 @@
 Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with your site and post/page data.</p>
 	</section>
 	<section class="slide">
-		<h2>Code samples</h2>
+		<h2>Example</h2>
 		<pre>
 			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
+			<code>&lt;html lang="en"&gt;</code>
+			<code>	{% include head.html %}</code>
+			<code><mark>&lt;body&gt;</mark></code>
+			<code>    {% include header.html %}</code>
+			<code>	&lt;main&gt;</code>
+			<code>    	{{ content }}</code>
+			<code>	&lt;/main&gt;</code>
+			<code><mark>&lt;/body&gt;</mark></code>
 		</pre>
 	</section>
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
+		<h2>Templates & Partials</h2>
+		Partials are partial views but not templates
+		<ul>
+			<li>head</li>
+			<li>main</li>
+			<li>footer</li>
+		</ul>
+		<strong>Templates:</strong>
+		<ul>
+			<li>default</li>
+			<li>page</li>
+			<li>tags</li>
+		</ul>
 	</section>
 	<section class="slide" id="picture">
 		<h2>Pictures</h2>
